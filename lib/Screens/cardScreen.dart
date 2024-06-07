@@ -120,13 +120,111 @@ class CardScreen extends StatelessWidget {
                     style: GoogleFonts.roboto(
                       textStyle: const TextStyle(
                         color: mainColor,
-                        fontSize: 34,
+                        fontSize: 22,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  SizedBox(
+                    width: 400,
+                    child: Text(
+                      "Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.",
+                      textAlign: TextAlign.left,
+                      style: GoogleFonts.roboto(
+                        textStyle: const TextStyle(
+                          color: secondaryColor,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  SizedBox(
+                    height: 50,
+                    width: 80,
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.white,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomRight: Radius.circular(8),
+                            topRight: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        textStyle: GoogleFonts.inter(
+                          textStyle:
+                              const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.favorite_outline,
+                        color: secondaryColor,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 50,
+                  ),
+                  SizedBox(
+                    height: 50,
+                    width: 250,
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        backgroundColor:
+                            const Color.fromRGBO(11, 206, 131, 100),
+                        foregroundColor: Colors.white,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomRight: Radius.circular(8),
+                            topRight: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        textStyle: GoogleFonts.inter(
+                          textStyle:
+                              const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      child: const Row(
+                        children: [
+                          SizedBox(width: 10),
+                          Icon(
+                            Icons.shopping_cart_outlined,
+                          ),
+                          SizedBox(width: 50),
+                          Text("Add to cart")
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
