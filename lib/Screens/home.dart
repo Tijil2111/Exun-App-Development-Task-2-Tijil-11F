@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:task_2/Screens/search.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -87,7 +88,14 @@ class HomePage extends StatelessWidget {
                 height: 50,
                 width: 350,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchScreen(),
+                      ),
+                    );
+                  },
                   style: TextButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(11, 206, 131, 100),
                     foregroundColor: Colors.white,
