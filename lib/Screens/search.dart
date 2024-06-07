@@ -110,7 +110,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 height: 75,
               ),
               SizedBox(
-                height: 450,
+                height: 563,
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
